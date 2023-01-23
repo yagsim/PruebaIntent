@@ -8,64 +8,49 @@
 
     <TextView
         android:id="@+id/resultado1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RESULTADO1"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/resultado1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintTop_toBottomOf="@+id/camara"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginBottom="292dp"
-        android:text="IR 2"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/ir_2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/resultado2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="245dp"
-        android:layout_marginEnd="162dp"
-        android:text="RESULTADO2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/resultado3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="243dp"
-        android:layout_marginEnd="42dp"
-        android:text="RESULTADO3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/navegador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
-        android:text="BUSCAR EN GOOGLE"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/camara" />
 
     <Button
-        android:id="@+id/llamar"
+        android:id="@+id/camara"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
-        android:text="LLAMAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/abrir_camara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="416dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
